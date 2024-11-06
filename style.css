@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;/*позволяет более плавно переходить*/
+}
+
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.col-4 {
+    width: 33.3%;
+    padding: 0 15px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 0 15px;
+}
+
+section {
+    padding: 90px 0;
+}
+
+.black-btn {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #FFFAFA;
+    padding: 10px 30px;
+    background-color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.black-btn:hover {
+    color: black;
+    background-color: transparent;
+}
+
+.title {
+    font-family: Roboto;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 64px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.header-nav-link {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: black;
+    text-decoration: none;
+}
+
+
+.hero-title {
+    margin-top: 30px;
+}
+
+
+.hero-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin: 30px 0;
+    width: 350px;
+}
+
+.hero-img{
+    width: 100%;
+}
+.projects hr {
+    margin: 40px 0;
+}
+
+
+.projects-text-title {
+    margin-top: 110px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
+.projects-text-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin: 30px 0;
+    width: 240px;
+}
+
+.projects-text-btn {
+    background-color: transparent;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: gray;
+    border: 1px solid gray;
+    cursor: pointer;
+    padding: 10px 27px;
+}
+
+.projects-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
+.projects-more {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 40px;
+    color: gray;
+    display: block;
+    text-align: center;
+}
+
+.projects-img {
+    width: 100%;
+}
+
+
+.contacts-form {
+    margin-top: 100px;
+}
+
+.contacts-form-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+}
+
+.contacts-form-input,
+.contacts-form-input::placeholder {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.contacts-form-btn {
+    margin-top: 60px;
+}
+
+.contacts-img {
+    width: 100%;
+}
+
+
+.footer {
+    background-color: black;
+    padding: 50px 0;
+}
+
+.footer-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link {
+    color: gray;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+}
+
+.burger-btn{
+    display: none;/*отсутствует но в нужный момент появится*/
+}
+@media screen and (max-width: 1400px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+    .title{
+        font-size: 46px;
+        line-height: 100%;
+    }
+    .footer-row{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+    .title{
+        font-size: 32px;
+    }
+    .hero-text{
+        width: 100%;
+    }
+    section{
+        padding: 45px 0;
+    }
+    .projects-text-title{
+        margin-top: 35px;
+    }
+    .contacts-form{
+        margin-top: 30px;
+    }
+    .header-menu{
+        position: relative;
+    }
+    .header-nav{
+        position: absolute;
+        flex-direction: column;
+        row-gap: 10px;
+        right: 0;
+        background-color: white;
+        height: 0;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .header-nav-show{
+        height: 110px;
+    }
+    .header-btn{
+        color: black;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+    }
+    .burger-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+    }
+    .burger-btn span::after,
+    .burger-btn span::before,
+    .burger-btn span{
+        content: '';
+        height: 5px;
+        width: 100%;
+        background-color: black;
+        position: relative;
+    }
+    .burger-btn span::after{
+        position: absolute;
+        top: -10px;
+    }
+    .burger-btn span::before{
+        position: absolute;
+        bottom: -10px;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .header-container{
+        padding: 10px 0;
+    }
+    .col-6{
+        width: 100%;
+    }
+    .row{
+        row-gap: 10px;
+    }
+}
