@@ -1,0 +1,17 @@
+.detail{
+    padding-top: 50px;
+    &-img{
+        width: 100%;
+    }
+    &-title{
+        margin-bottom: 15px;
+    }
+    &-text{
+        margin-bottom: 10px;
+    }
+    &-block{
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,17 @@
+.card{
+
+    &-img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        &:hover{
+            object-fit: scale-down;
+        }
+    }
+
+    &-block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
